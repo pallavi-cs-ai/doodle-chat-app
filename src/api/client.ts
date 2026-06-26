@@ -1,6 +1,6 @@
 import type { Message, CreateMessageBody, GetMessagesParams, ApiErrorResponse } from '../types/api';
 
-const API_BASE = '/api/v1';
+const API_BASE =  '/api/v1';
 const AUTH_TOKEN = 'super-secret-doodle-token';
 
 function headers(includeJson = true): HeadersInit {
