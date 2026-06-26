@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback } from 'react';
 import { AUTHOR_STORAGE_KEY } from '../constants';
 
 export function useAuthor() {
-  const [author, setAuthorState] = useState<string | null>(() => {
+  const [author, setAuthorState] =  useState<string | null>(() => {
     try {
       return localStorage.getItem(AUTHOR_STORAGE_KEY);
     } catch {
@@ -15,7 +15,7 @@ export function useAuthor() {
     try {
       localStorage.setItem(AUTHOR_STORAGE_KEY, author);
     } catch {
-      // ignore
+      //ignore 
     }
   }, [author]);
 
